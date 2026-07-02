@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ansta</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <main class="app">
+    <header>
+      <h1>Ansta</h1>
+      <button id="themeBtn">Theme</button>
+    </header>
+
+    <section class="stories" id="stories"></section>
+
+    <section class="composer">
+      <input id="caption" placeholder="Write something..." />
+      <input id="imageUrl" placeholder="Image URL paste karo" />
+      <button id="postBtn">Post</button>
+    </section>
+
+    <section class="tabs">
+      <button class="tab active" data-page="feed">Feed</button>
+      <button class="tab" data-page="explore">Explore</button>
+      <button class="tab" data-page="reels">Reels</button>
+      <button class="tab" data-page="profile">Profile</button>
+    </section>
+
+    <section id="feed" class="page active"></section>
+    <section id="explore" class="page"></section>
+    <section id="reels" class="page"></section>
+    <section id="profile" class="page"></section>
+  </main>
+
+  <script src="app.js"></script>
+</body>
+</html>
